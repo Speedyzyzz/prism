@@ -5,7 +5,8 @@ import { formatPrice } from "@/lib/format";
 import { useOrderStore } from "@/stores/order-store";
 
 export function SessionAnalytics() {
-  const storeMetrics = useOrderStore((s) => s.getMetrics());
+  const getMetrics = useOrderStore((s) => s.getMetrics);
+  const storeMetrics = getMetrics();
 
   const revenueMetrics = [
     { label: "Gross Revenue Volume", value: formatPrice(storeMetrics.grossVolume), change: "+18.4%", icon: DollarSign, highlight: true },

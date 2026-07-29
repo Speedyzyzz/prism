@@ -12,7 +12,8 @@ import { useOrderStore } from "@/stores/order-store";
 
 export default function MerchantPage() {
   const [adminSubTab, setAdminSubTab] = useState<"fraud" | "reviews" | "analytics" | "payments">("fraud");
-  const storeMetrics = useOrderStore((s) => s.getMetrics());
+  const getMetrics = useOrderStore((s) => s.getMetrics);
+  const storeMetrics = getMetrics();
   const liveOrders = useOrderStore((s) => s.orders);
 
   // Combine live orders with sample merchant logs
