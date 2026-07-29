@@ -1,4 +1,4 @@
-/** OmniShop OS — Typography Tokens */
+/** Prism OS — Typography Tokens */
 export const typography = {
   fontFamily: {
     sans: "'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 """
-OmniShop OS — LangGraph Agent Graph
+Prism OS — LangGraph Agent Graph
 
 Compiles the state machine graph that orchestrates the agent pipeline.
 Topology matches spec Section 8:

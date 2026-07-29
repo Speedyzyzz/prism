@@ -1,4 +1,4 @@
-/** OmniShop OS — Cart Store (Zustand) */
+/** Prism OS — Cart Store (Zustand) */
 import { create } from "zustand";
 import { API_BASE_URL } from "@/lib/api-client";
 

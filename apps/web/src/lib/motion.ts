@@ -1,4 +1,4 @@
-/** OmniShop OS — Shared Framer Motion Variants */
+/** Prism OS — Shared Framer Motion Variants */
 import type { Variants, Transition } from "framer-motion";
 
 // Apple easing curve used everywhere

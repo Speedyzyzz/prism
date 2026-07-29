@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Pydantic Schemas
+Prism OS — Pydantic Schemas
 
 Request/response models for all API endpoints, including typed
 Generative UI payloads for the streaming chat interface.

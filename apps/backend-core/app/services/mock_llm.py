@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 """
-OmniShop OS — Mock LLM Service
+Prism OS — Mock LLM Service
 
 Simulates Gemini 2.5 Flash / GPT-4o responses for hackathon development.
 Provides intent classification, response generation, and streaming simulation.
@@ -189,7 +189,7 @@ class MockLLMService:
         greetings = ["hi", "hello", "hey", "good morning", "good evening"]
         if any(g in message.lower() for g in greetings):
             return (
-                "👋 Welcome to OmniShop OS! I'm your AI shopping assistant. "
+                "👋 Welcome to Prism OS! I'm your AI shopping assistant. "
                 "You can:\n"
                 "• **Search** for products by describing what you want\n"
                 "• **Upload an image** to find visually similar items\n"

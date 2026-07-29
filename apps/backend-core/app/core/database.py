@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Database Layer
+Prism OS — Database Layer
 
 Async SQLAlchemy engine, session factory, and base model.
 Uses SQLite for local dev, swappable to PostgreSQL via config.

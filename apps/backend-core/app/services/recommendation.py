@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Recommendation & Explainability Service
+Prism OS — Recommendation & Explainability Service
 
 Generates personalized product recommendations with transparent
 XAI reasoning badges explaining *why* each product was recommended.

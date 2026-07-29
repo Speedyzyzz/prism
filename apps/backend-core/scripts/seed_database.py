@@ -1,5 +1,5 @@
 """
-OmniShop OS — Database Seeder
+Prism OS — Database Seeder
 
 Populates the database with realistic demo data for hackathon demos.
 Includes products, users, orders, reviews, and return requests.

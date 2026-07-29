@@ -1,7 +1,7 @@
 [project]
-name = "omnishop-os-backend"
+name = "prism-os-backend"
 version = "0.1.0"
-description = "OmniShop OS - AI-Powered Commerce Operating System Backend"
+description = "Prism OS - AI-Powered Commerce Operating System Backend"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [

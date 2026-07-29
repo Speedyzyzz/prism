@@ -1,4 +1,4 @@
-/** OmniShop OS — Color Tokens */
+/** Prism OS — Color Tokens */
 export const colors = {
   bg: {
     primary: "#fafafa",

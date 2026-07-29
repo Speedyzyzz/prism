@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Security Utilities
+Prism OS — Security Utilities
 
 JWT token management, password hashing, and authentication dependency.
 """

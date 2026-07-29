@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Product Endpoints
+Prism OS — Product Endpoints
 
 Product listing, detail, reviews, and comparison.
 """

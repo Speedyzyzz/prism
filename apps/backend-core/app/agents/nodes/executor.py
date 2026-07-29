@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Executor Node
+Prism OS — Executor Node
 
 Handles cart mutations, product comparisons, and checkout staging
 via the MCP tool layer.

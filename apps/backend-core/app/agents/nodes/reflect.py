@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Reflection Node
+Prism OS — Reflection Node
 
 Self-correcting RAG pipeline node that evaluates result quality
 and triggers query rewriting if results are insufficient.

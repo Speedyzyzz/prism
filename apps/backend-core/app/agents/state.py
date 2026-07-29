@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Agent State Definition
+Prism OS — Agent State Definition
 
 Typed state schema for the LangGraph orchestrator.
 Matches the spec's Section 8 state machine definition.

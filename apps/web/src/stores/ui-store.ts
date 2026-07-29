@@ -1,4 +1,4 @@
-/** OmniShop OS — UI Store (Zustand) */
+/** Prism OS — UI Store (Zustand) */
 import { create } from "zustand";
 
 interface Notification {

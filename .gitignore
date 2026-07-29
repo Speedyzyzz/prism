@@ -8,7 +8,7 @@ build/
 venv/
 __pycache__/
 *.pyc
-omnishop.db
+prism.db
 .DS_Store
 *.log
 .gemini/

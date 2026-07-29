@@ -1,4 +1,4 @@
-/** OmniShop OS — Classname Utility (clsx + tailwind-merge) */
+/** Prism OS — Classname Utility (clsx + tailwind-merge) */
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 

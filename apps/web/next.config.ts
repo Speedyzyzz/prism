@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     remotePatterns: [
-      { protocol: "https", hostname: "cdn.omnishop.os" },
+      { protocol: "https", hostname: "cdn.prism.os" },
       { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },

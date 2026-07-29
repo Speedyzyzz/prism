@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Catalog MCP Tools
+Prism OS — Catalog MCP Tools
 
 MCP-compliant tool functions for product search, visual search,
 product comparison, and detail retrieval.

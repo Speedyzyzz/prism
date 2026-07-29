@@ -38,7 +38,7 @@ export function WorkspaceSidebar({ activeTab, setActiveTab }: { activeTab: strin
           <LayoutDashboard className="w-4 h-4 text-white" />
         </div>
         <span className="font-bold text-lg text-zinc-900 tracking-tight">
-          OmniShop OS
+          Prism OS
         </span>
       </SidebarHeader>
 

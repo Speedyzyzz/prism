@@ -62,7 +62,7 @@ export default function SettingsPage() {
             </div>
             <div>
               <label className="block text-sm font-semibold text-zinc-900 mb-2">Email Address</label>
-              <input type="email" defaultValue="john@omnishop.com" className="w-full bg-zinc-50 border border-zinc-200 rounded-xl px-4 py-3 text-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all" />
+              <input type="email" defaultValue="john@prism.com" className="w-full bg-zinc-50 border border-zinc-200 rounded-xl px-4 py-3 text-zinc-900 focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 transition-all" />
             </div>
             <button className="bg-zinc-900 text-white rounded-full px-6 py-3 font-semibold hover:bg-zinc-800 transition-colors">
               Save Changes

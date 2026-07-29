@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Auth Middleware
+Prism OS — Auth Middleware
 
 JWT Bearer token validation and user extraction middleware.
 """

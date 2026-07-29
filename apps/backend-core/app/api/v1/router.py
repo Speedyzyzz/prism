@@ -1,5 +1,5 @@
 """
-OmniShop OS — API Router
+Prism OS — API Router
 
 Aggregates all endpoint routers under /api/v1.
 """

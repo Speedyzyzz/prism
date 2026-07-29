@@ -1,4 +1,4 @@
-/** OmniShop OS — Radius Tokens */
+/** Prism OS — Radius Tokens */
 export const radius = {
   sm: "0.75rem",    // 12px — small elements
   md: "1rem",       // 16px — buttons, inputs

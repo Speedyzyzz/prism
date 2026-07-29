@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Fraud Detection & Review Verification Service
+Prism OS — Fraud Detection & Review Verification Service
 
 Provides mock ML-based risk scoring for return fraud (PS 3)
 and NLP-driven fake review detection (PS 8).

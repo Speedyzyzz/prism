@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Recommendation MCP Tools
+Prism OS — Recommendation MCP Tools
 
 MCP-compliant tool functions for personalized product recommendations
 and size fit evaluation.

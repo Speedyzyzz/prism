@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Application Configuration
+Prism OS — Application Configuration
 
 Pydantic Settings with environment variable overrides.
 All AI/LLM services default to mock mode for hackathon development.
@@ -14,17 +14,17 @@ class Settings(BaseSettings):
     """Application configuration with sensible defaults for local development."""
 
     # ── App ──────────────────────────────────────────────────────────────
-    APP_NAME: str = "OmniShop OS"
+    APP_NAME: str = "Prism OS"
     APP_VERSION: str = "0.1.0"
     DEBUG: bool = True
     ENVIRONMENT: str = "development"
 
     # ── Database ─────────────────────────────────────────────────────────
-    DATABASE_URL: str = "sqlite+aiosqlite:///./omnishop.db"
-    # For PostgreSQL: "postgresql+asyncpg://user:pass@localhost:5432/omnishop"
+    DATABASE_URL: str = "sqlite+aiosqlite:///./prism.db"
+    # For PostgreSQL: "postgresql+asyncpg://user:pass@localhost:5432/prism"
 
     # ── Security ─────────────────────────────────────────────────────────
-    SECRET_KEY: str = "omnishop-hackathon-secret-key-change-in-production"
+    SECRET_KEY: str = "prism-hackathon-secret-key-change-in-production"
     JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24  # 24 hours for dev
 

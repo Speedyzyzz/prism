@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Rate Limiting Middleware
+Prism OS — Rate Limiting Middleware
 
 Simple in-memory rate limiter. Upgradeable to Redis in production.
 """

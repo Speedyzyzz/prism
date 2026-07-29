@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Admin Endpoints
+Prism OS — Admin Endpoints
 
 Merchant OS dashboard: Return fraud risk analytics (PS 3),
 fake review detection (PS 8), and session analytics.

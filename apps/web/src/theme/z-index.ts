@@ -1,4 +1,4 @@
-/** OmniShop OS — Z-Index Tokens */
+/** Prism OS — Z-Index Tokens */
 export const zIndex = {
   base: 0,
   dropdown: 10,

@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Retriever Node
+Prism OS — Retriever Node
 
 Executes hybrid text-based product search through the catalog MCP tools
 and generates personalized recommendation reasons.

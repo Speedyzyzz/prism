@@ -1,4 +1,4 @@
-/** OmniShop OS — Formatting Utilities */
+/** Prism OS — Formatting Utilities */
 
 export function formatPrice(price: number): string {
   return new Intl.NumberFormat("en-US", {

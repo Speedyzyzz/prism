@@ -1,4 +1,4 @@
-/** OmniShop OS — Chat Store (Zustand)
+/** Prism OS — Chat Store (Zustand)
  *
  * Manages conversation state, streaming, thinking steps, and the
  * context panel type that drives the workspace paradigm.

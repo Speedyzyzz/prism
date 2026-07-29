@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Planner Node
+Prism OS — Planner Node
 
 Entry point of the agent graph. Classifies user intent, extracts
 structured parameters, and routes to the appropriate execution node.

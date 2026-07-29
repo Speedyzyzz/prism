@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Auth Endpoints
+Prism OS — Auth Endpoints
 
 User registration, login, and profile retrieval.
 """

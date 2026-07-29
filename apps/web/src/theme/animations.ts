@@ -1,4 +1,4 @@
-/** OmniShop OS — Animation Tokens */
+/** Prism OS — Animation Tokens */
 export const animations = {
   ease: {
     apple: [0.32, 0.72, 0, 1] as const,

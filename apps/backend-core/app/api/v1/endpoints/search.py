@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Search Endpoints
+Prism OS — Search Endpoints
 
 Visual product search (PS 10) and standard product search.
 """

@@ -1,4 +1,4 @@
-# OmniShop OS
+# Prism OS
 
 > AI-Powered Commerce Operating System
 
@@ -7,7 +7,7 @@ An intent-driven shopping experience that turns natural conversation, visual ins
 ## Architecture
 
 ```
-omnishop-os/
+prism-os/
 ├── apps/
 │   └── backend-core/    # FastAPI + LangGraph Agent Core
 │       ├── app/

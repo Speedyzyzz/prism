@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — FastAPI Application Entry Point
+Prism OS — FastAPI Application Entry Point
 
 Application factory with CORS, middleware, lifespan handlers,
 and API router mounting.

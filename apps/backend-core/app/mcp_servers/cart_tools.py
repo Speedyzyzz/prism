@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Cart MCP Tools
+Prism OS — Cart MCP Tools
 
 MCP-compliant tool functions for cart mutation, coupon application,
 and checkout staging.

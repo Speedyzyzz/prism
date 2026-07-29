@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Vision Service
+Prism OS — Vision Service
 
 Simulates SigLIP visual analysis for image-based product search.
 Extracts mock visual attributes (color, material, style, category)

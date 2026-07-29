@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Risk MCP Tools
+Prism OS — Risk MCP Tools
 
 MCP-compliant tool functions for return fraud risk evaluation (PS 3)
 and fake review verification (PS 8).

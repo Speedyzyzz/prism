@@ -1,4 +1,4 @@
-# OmniShop OS — Backend Core
+# Prism OS — Backend Core
 
 AI-powered commerce backend with agentic shopping, visual search, and merchant analytics.
 
@@ -82,8 +82,8 @@ See full interactive docs at `http://localhost:8000/docs`
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `DATABASE_URL` | `sqlite+aiosqlite:///./omnishop.db` | Database connection |
-| `SECRET_KEY` | `omnishop-hackathon-...` | JWT signing key |
+| `DATABASE_URL` | `sqlite+aiosqlite:///./prism.db` | Database connection |
+| `SECRET_KEY` | `prism-hackathon-...` | JWT signing key |
 | `USE_MOCK_LLM` | `True` | Use mock AI services |
 | `DEBUG` | `True` | Enable debug mode |
 

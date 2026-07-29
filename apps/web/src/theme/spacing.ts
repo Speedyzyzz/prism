@@ -1,4 +1,4 @@
-/** OmniShop OS — Spacing Tokens */
+/** Prism OS — Spacing Tokens */
 export const spacing = {
   px: "1px",
   0.5: "0.125rem",   // 2px

@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Vision Node
+Prism OS — Vision Node
 
 Processes image payloads through the vision service and performs
 visual product search via the catalog MCP tools.

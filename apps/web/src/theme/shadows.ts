@@ -1,4 +1,4 @@
-/** OmniShop OS — Shadow Tokens */
+/** Prism OS — Shadow Tokens */
 export const shadows = {
   none: "none",
   xs: "0 1px 2px rgba(0, 0, 0, 0.04)",

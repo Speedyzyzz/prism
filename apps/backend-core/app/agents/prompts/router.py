@@ -1,5 +1,5 @@
 """
-OmniShop OS — Router Prompts
+Prism OS — Router Prompts
 
 Intent classification and routing prompt templates.
 """

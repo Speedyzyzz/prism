@@ -1,5 +1,5 @@
 """
-OmniShop OS — SQLAlchemy ORM Models
+Prism OS — SQLAlchemy ORM Models
 
 Full relational schema matching the spec's DDL (Section 6).
 Uses SQLAlchemy 2.0 declarative mapping with type annotations.

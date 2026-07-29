@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Chat Streaming Endpoint
+Prism OS — Chat Streaming Endpoint
 
 POST /api/v1/chat — Main conversational AI endpoint.
 Streams SSE events: thinking steps, text tokens, Generative UI components.

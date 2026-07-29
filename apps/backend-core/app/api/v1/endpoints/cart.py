@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Cart Endpoints
+Prism OS — Cart Endpoints
 
 Cart management, coupon application, and checkout staging.
 """

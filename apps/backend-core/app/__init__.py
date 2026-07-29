@@ -1,1 +1,1 @@
-# OmniShop OS Backend
+# Prism OS Backend

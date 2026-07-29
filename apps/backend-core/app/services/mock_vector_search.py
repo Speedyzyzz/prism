@@ -1,6 +1,6 @@
 from __future__ import annotations
 """
-OmniShop OS — Mock Vector Search Service
+Prism OS — Mock Vector Search Service
 
 Simulates Qdrant hybrid search (dense + sparse) with realistic
 similarity scoring and payload metadata filtering.
@@ -73,7 +73,7 @@ class MockVectorSearchService:
             imgs = product.images or []
             sanitized_imgs = []
             for img in imgs:
-                if "cdn.omnishop.os" in img or not img.startswith("http"):
+                if "cdn.prism.os" in img or not img.startswith("http"):
                     if "shoe" in product.title.lower() or "sneaker" in product.title.lower():
                         sanitized_imgs.append("/images/shoes.png")
                     elif "bag" in product.title.lower() or "tote" in product.title.lower():
@@ -151,7 +151,7 @@ class MockVectorSearchService:
             imgs = product.images or []
             sanitized_imgs = []
             for img in imgs:
-                if "cdn.omnishop.os" in img or not img.startswith("http"):
+                if "cdn.prism.os" in img or not img.startswith("http"):
                     if "shoe" in product.title.lower() or "sneaker" in product.title.lower():
                         sanitized_imgs.append("/images/shoes.png")
                     elif "bag" in product.title.lower() or "tote" in product.title.lower():

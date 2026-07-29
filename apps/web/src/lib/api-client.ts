@@ -1,5 +1,5 @@
 /**
- * OmniShop OS — API Client & SSE Stream Reader
+ * Prism OS — API Client & SSE Stream Reader
  * Connects to FastAPI backend on http://localhost:8080 with mock fallback safety.
  */
 
