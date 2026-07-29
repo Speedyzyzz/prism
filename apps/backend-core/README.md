@@ -1,0 +1,98 @@
+# OmniShop OS — Backend Core
+
+AI-powered commerce backend with agentic shopping, visual search, and merchant analytics.
+
+## Setup
+
+```bash
+# Install dependencies
+pip install -e .
+
+# Run development server
+uvicorn app.main:app --reload --port 8000
+```
+
+The server automatically:
+1. Creates SQLite database tables on first startup
+2. Seeds 25+ demo products, users, orders, reviews, and return requests
+3. Serves Swagger API docs at `/docs`
+
+## Architecture
+
+### Agent Pipeline (LangGraph)
+
+```
+User Message → Planner → [Vision | Retriever | Executor] → Reflection → Response
+```
+
+- **Planner**: Classifies intent (SEARCH, COMPARE, CART, VISUAL_SEARCH, RECOMMEND, GENERAL)
+- **Vision**: SigLIP image analysis + visual similarity search
+- **Retriever**: Hybrid text search + personalized re-ranking + XAI reasoning
+- **Executor**: Cart mutations, product comparison, checkout staging
+- **Reflection**: Self-correcting RAG with automatic query broadening on failure
+
+### MCP Tool Layer
+
+- `catalog_tools`: search_catalog, find_similar_image, compare_products, get_product_details
+- `cart_tools`: manage_cart (ADD/REMOVE/CLEAR/COUPON), stage_checkout
+- `risk_tools`: evaluate_return_risk, verify_review_authenticity, get_risk_dashboard
+- `recommendation_tools`: recommend_products, evaluate_size_fit
+
+### Chat Stream Events (SSE)
+
+```
+event: thinking    → Agent reasoning steps
+event: text        → Streamed response tokens
+event: generative_ui → Typed UI component (PRODUCT_CAROUSEL, COMPARISON_MATRIX, STAGED_CHECKOUT)
+event: tool_call   → Tool invocation records
+event: done        → Stream termination
+```
+
+## API Reference
+
+See full interactive docs at `http://localhost:8000/docs`
+
+### Authentication
+- `POST /api/v1/auth/register` — Create account
+- `POST /api/v1/auth/login` — Get JWT token
+
+### Chat (AI Agent)
+- `POST /api/v1/chat` — Conversational AI (SSE streaming or JSON)
+
+### Products
+- `GET /api/v1/products` — List/search products
+- `GET /api/v1/products/{id}` — Product detail
+- `POST /api/v1/products/compare` — Side-by-side comparison
+
+### Search
+- `POST /api/v1/search/visual` — Upload image for visual search
+- `GET /api/v1/search/products` — Semantic product search
+
+### Cart
+- `GET /api/v1/cart` — Current cart
+- `POST /api/v1/cart/action` — Modify cart
+- `POST /api/v1/cart/checkout` — Stage checkout
+
+### Admin (Merchant OS)
+- `GET /api/v1/admin/dashboard` — Overview metrics
+- `GET /api/v1/admin/returns/risk-audit` — Fraud risk analysis
+- `GET /api/v1/admin/reviews/audit` — Fake review detection
+
+## Environment Variables
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `DATABASE_URL` | `sqlite+aiosqlite:///./omnishop.db` | Database connection |
+| `SECRET_KEY` | `omnishop-hackathon-...` | JWT signing key |
+| `USE_MOCK_LLM` | `True` | Use mock AI services |
+| `DEBUG` | `True` | Enable debug mode |
+
+## Demo Coupons
+
+| Code | Discount |
+|------|----------|
+| LOYALTY20 | 20% off |
+| WELCOME10 | 10% off |
+| FLASH30 | 30% off |
+| HACKATHON | 15% off |
+| VIP25 | 25% off |
