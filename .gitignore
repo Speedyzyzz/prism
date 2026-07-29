@@ -12,3 +12,5 @@ omnishop.db
 .DS_Store
 *.log
 .gemini/
+AGENTS/
+.agents/
