@@ -222,8 +222,41 @@ async def seed_products(
     colors = ["black", "navy", "brown", "beige", "grey", "white", "olive", "amber"]
 
     products = []
-        products.append(product)
+    idx = 1
+    for cat_slug, template in category_templates.items():
+        if cat_slug not in categories:
+            continue
+        category = categories[cat_slug]
+        for title in template["titles"]:
+            selected_colors = random.sample(colors, k=min(3, len(colors)))
+            for color in selected_colors:
+                brand = random.choice(template["brands"])
+                material = random.choice(template["materials"])
+                min_p, max_p = template["base_price"]
+                price = round(random.uniform(min_p, max_p), 2)
+                orig_price = round(price * random.uniform(1.1, 1.3), 2) if random.random() > 0.5 else None
+                sku = f"PRISM-{cat_slug[:3].upper()}-{idx:04d}"
+                idx += 1
 
+                product = Product(
+                    sku=sku,
+                    title=f"{title} ({color.title()})",
+                    description=f"Premium {color} {cat_slug} crafted from fine {material}. Designed by {brand}.",
+                    category_id=category.id,
+                    brand=brand,
+                    price=price,
+                    original_price=orig_price,
+                    stock_quantity=random.randint(10, 150),
+                    attributes={"color": color, "material": material, "brand": brand},
+                    images=[template["image"]],
+                    rating_avg=round(random.uniform(4.0, 5.0), 1),
+                    rating_count=random.randint(15, 300),
+                    is_active=True,
+                )
+                session.add(product)
+                products.append(product)
+
+    await session.flush()
     return products
 
 
